@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3e659282651f4ec0a8a7e2b56acf55cd" Name="Diagram1">
+        <EntityTypeShape EntityType="DatabaseModel.MsEmployee" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.MsFlower" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.MsFlowerType" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.MsMember" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.TrDetail" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.TrHeader" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="DatabaseModel.FK_TrHeader_To_MsEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_MsFlower_To_MsFlowerType" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_TrDetail_ToMsFlower" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_TrHeader_To_MsMember" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_TrDetail_To_TrHeader" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
